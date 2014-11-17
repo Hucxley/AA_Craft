@@ -1,6 +1,4 @@
-#!D:/Program\ Files\ (x86)/Git/bin/perl.exe
-
-# This is a comment
+#!D:\Applications\Strawberry\perl\bin\perl.exe
 
 use strict;
 use warnings;
@@ -110,8 +108,8 @@ do {
         $qty = 1;
     }
 
-    print "You entered: $input\n";
-    print "Quantity: $qty\n";
+#    print "You entered: $input\n";
+#    print "Quantity: $qty\n";
 
     if (not %craft) {
         print "\%craft is undefined.\n";
@@ -119,9 +117,6 @@ do {
         if (defined $craft{$input}) {
             my %list;
             add_to_list($input, $qty, \%list);
-            #foreach my $key (keys %{$craft{$input}}) {
-            #    add_to_list($key, $craft{$input}{$key}, \%list);
-            #}
 
             print "Materials required:\n\n";
             
